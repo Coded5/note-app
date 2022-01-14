@@ -1,0 +1,67 @@
+.note {
+   background-color: #ffecc9;
+   box-shadow: 0 15px 16px 4px #00000030;
+   border-radius: 16px;
+
+   width: 20vw;
+   max-width: 350px;
+   max-height: 460px;
+
+   word-wrap: break-word;
+   overflow: hidden;
+
+   padding: 16px;
+   margin: 8px;
+}
+
+input, textarea {
+   color: black;
+}
+
+.title {
+   font-family: 'Roboto Mono', monospace;
+   box-sizing: border-box;
+
+   font-weight: 700;
+   font-size: 1.1rem;
+   margin-bottom: 16px;
+
+   border: none;
+   background-color: #00000000;
+   width: 100%;
+}
+
+.title:focus {
+   outline: none;
+}
+
+.text {
+   border: none;
+   background-color: #00000000;
+   max-height: 428px;
+   width: 100%;
+
+   font-size: 1rem;
+   resize: none;
+}
+
+.text:focus {
+   outline: none;
+}
+
+.text::-webkit-scrollbar {
+   width: 0.4em;
+}
+
+.text::-webkit-scrollbar-track {
+   background-color: rgba(0,0,0,0);
+}
+
+.text::-webkit-scrollbar-thumb {
+   border-radius: 8px;
+   background-color: #ffdfa4;
+}
+
+.text::-webkit-scrollbar-thumb:hover {
+   background-color: #ffd993;
+ }
