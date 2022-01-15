@@ -18,12 +18,14 @@ const Dashboard = () => {
    return (
       <div className="dashboard-container">
          <div className="section navigation-bar">
-            <div className="navigation-box">
+            <div className="navigation-account">
                <h4>Account</h4>
-               <span className="account-name">Nutdanai Sikkhakul</span><br/>
-               <a href="#">Sign out</a>
+               <div className="account-data">
+                  <span className="account-name">Nutdanai Sikkhakul</span><br/>
+                  <a href="#">Sign out</a>
+               </div>
             </div>
-            <div>
+            <div className="navigation-folders">
                <h4>Folder</h4>
                <ul className="folder">
                   {

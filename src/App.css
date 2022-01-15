@@ -10,3 +10,15 @@ html {
    font-family: 'Roboto Mono', monospace;
    box-sizing: border-box;
 }
+
+body {
+   overflow: hidden;
+}
+
+.temp {
+   background-color: blue;
+   width: 20%;
+   height: 40vh;
+   border: 1px solid black;
+   overflow-y:scroll;
+}

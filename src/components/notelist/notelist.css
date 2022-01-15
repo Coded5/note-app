@@ -1,7 +1,58 @@
+.notelist-container {
+   display: flex;
+   flex-flow: column;
+   height: 100%;
+}
+
+.searchbar-container {
+   height: 10vh;
+}
+
 .notelist {
+   display: flex;
+   flex-direction: column;
+   
+   flex: 1;
+}
+
+.toolbar {
+   height: 12vh;
+}
+
+.toolbar h1 {
+   padding: 30px;
+}
+
+.notes {
+   display:block;
+   height: 80vh;
+   overflow-y:scroll;
+}
+
+.list { 
+   margin: 0;
    padding: 2%;
 }
 
-.list {
+.list li {
    display: inline-block;
+   vertical-align: top;
 }
+
+.notes::-webkit-scrollbar {
+   width: 0.5em;
+   margin-right: 1%;
+}
+
+.notes::-webkit-scrollbar-track {
+   background-color: rgba(0,0,0,0);
+}
+
+.notes::-webkit-scrollbar-thumb {
+   border-radius: 8px;
+   background-color: rgb(121, 127, 138);
+}
+
+.notes::-webkit-scrollbar-thumb:hover {
+   background-color: rgb(98, 103, 112);
+ }

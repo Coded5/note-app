@@ -9,6 +9,7 @@
 .navigation-bar {
    flex: 3;
    background-color: rgb(61, 66, 75);
+   min-width: 225px;
 }
 
 .navigation-box {
@@ -21,12 +22,20 @@
    margin-right: 6px;
 }
 
-h4 {
+.navigation-account {
+   padding: 15px;
+}
+
+.account-data {
+   font-size: .8rem;
+   padding-left: 5px;
+}
+
+.navigation-folders h4 {
    padding-left: 10px;
 }
 
 .folder {
-   text-decoration: none;
    list-style-type: none;
    margin-top: 10px;
 
