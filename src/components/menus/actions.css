@@ -1,0 +1,10 @@
+.menu-item {
+   padding: 8px 16px;
+   border-radius: 8px;
+   
+}
+
+.menu-item:hover {
+   background-color: rgb(44, 47, 53);
+   cursor: pointer;
+}

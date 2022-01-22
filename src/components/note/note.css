@@ -8,10 +8,35 @@
    max-height: 460px;
 
    word-wrap: break-word;
-   overflow: hidden;
+   overflow: visible;
 
    padding: 16px;
    margin: 8px;
+
+   position: relative;
+}
+
+.note-dropdown {
+   position: absolute;
+   right: 2%;
+   top: 3%;
+   
+   color: black;
+}
+
+.note-dropdown-menu {
+   position: absolute;
+   width: 10vw;
+
+   background-color: white;
+}
+
+.note-dropdown-menu ul {
+   list-style-type: none;
+}
+
+.note-dropdown:hover {
+   cursor: pointer;
 }
 
 input, textarea {
@@ -65,3 +90,34 @@ input, textarea {
 .text::-webkit-scrollbar-thumb:hover {
    background-color: #ffd993;
  }
+
+.selection {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 16px;
+}
+
+.selection:hover {
+   cursor: pointer;
+}
+
+.select-badge {
+   top: -10%;
+   left: -4%;
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   border-radius: 16px;
+
+   background-color: rgb(42, 116, 255);
+   font-weight: 800;
+   color: white;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

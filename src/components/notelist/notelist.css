@@ -17,10 +17,14 @@
 
 .toolbar {
    height: 12vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
 .toolbar h1 {
-   padding: 30px;
+   padding-left: 30px;
+   padding-top: 15px;
 }
 
 .notes {

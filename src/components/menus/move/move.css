@@ -1,0 +1,32 @@
+.move-select {
+   background-color: rgb(44, 47, 53);
+   border: none;
+   outline: none;
+
+   border-radius: 8px;
+   padding: .4rem;
+   width: 100%;
+
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   appearance:none;
+}
+
+.move-btn {
+   display: flex;
+   justify-content: right;
+
+   padding: 8px;
+}
+
+.move-btn input[type="button"] {
+   font: inherit;
+   color: #bac4c7;
+   background-color: #00000000;
+   border: none;
+}
+
+.move-btn input[type="button"]:hover {
+   color: white;
+   cursor: pointer;
+}

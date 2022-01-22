@@ -1,0 +1,19 @@
+.btn-container {
+   display: flex;
+   justify-content: right;
+}
+
+.btn-container input[type="button"] {
+   background-color: #00000000;
+   padding: 4px;
+   margin: 16px 1% 0px;
+   border: none;
+   outline: none;
+   font: inherit;
+   color: inherit;
+}
+
+.btn-container input[type="button"]:hover {
+   color: white;
+   cursor: pointer;
+}

@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import "./note.css";
 
-const Note = ({note_title, note_text}) => {
-   const [title, setTitle] = useState("untitled");
-
-   useEffect(() => {
-      if(note_title) setTitle(note_title);
-   }, []);
-
+const Note = ({title, text, inSelectMode, isSelect, onOpenMenu, onTitleChange, onTextChange, onSelect, id}) => {
    const updateTextareaHight = (e) => {
       e.target.style.height = '38px';
       e.target.style.height = `${Math.min(e.target.scrollHeight, 460)}px`;
@@ -16,8 +10,31 @@ const Note = ({note_title, note_text}) => {
 
    return (
       <div className="note">
-         <input className="title" type="text" value={title} onChange={(e) => setTitle(e.target.value)}/> 
-         <textarea className="text" row="0" onInput={updateTextareaHight} />
+         {isSelect ? 
+         <div className="select-badge">
+            &#x2713;
+         </div> : ""}
+         {(inSelectMode) ? <div className="selection" onClick={() => onSelect(id)} /> : ""}
+         <input 
+            className="title" 
+            type="text" 
+            value={title}
+            onChange={(e) => {
+               onTitleChange(id, e.target.value);
+            }}
+         /> 
+         <textarea 
+            className="text"  
+            value={text}
+            onInput={updateTextareaHight} 
+            onChange={(e) => {
+               onTextChange(id, e.target.value);
+            }}
+         />
+         <div className="note-dropdown unselectable" onClick={() => onOpenMenu(id)}>
+            &#10247;
+         </div>
+         
       </div>
    );
 }

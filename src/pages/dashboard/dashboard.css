@@ -42,6 +42,34 @@
    width: 100%;
 }
 
+.folder-toolbox {
+   display: flex;
+   justify-content: space-between;
+   padding-right: 10px;
+}
+
+.folder-toolbox input[type="button"] {
+   margin-right: 8px;
+   background-color: #00000000;
+   border: none;
+   outline: none;
+
+   font: inherit;
+   font-size: 1.2rem;
+   color: inherit;
+}
+
+.folder-toolbox input[type="button"]:hover {
+   color: white;
+   cursor: pointer;
+}
+
+.folder-toolbox input[type="button"]:disabled {
+   color: #757575;
+   cursor: auto;
+}
+
+
 .folder-item {
    padding: 3px 0 3px 20px;
 }

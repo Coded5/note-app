@@ -1,0 +1,37 @@
+.rename {
+   width: 98%;
+   border: none;
+   outline: none;
+   padding: 4px;
+
+   border-radius: 16px;
+}
+
+.bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
+.error {
+   padding: 8px;
+   color:#fd6363;
+}
+
+.rename-btn {
+   display: flex;
+   justify-content: right;
+
+   padding: 8px;
+}
+
+.rename-btn input[type="button"] {
+   font: inherit;
+   color: #bac4c7;
+   background-color: #00000000;
+   border: none;
+}
+
+.rename-btn input[type="button"]:hover {
+   color: white;
+   cursor: pointer;
+}
