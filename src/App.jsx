@@ -31,7 +31,7 @@ const dummy_note_data =
       ]
    },
    {
-      folder_name: "A Fucking Folder",
+      folder_name: "Test folder",
       notes: [
          {
             title: "untiled",
